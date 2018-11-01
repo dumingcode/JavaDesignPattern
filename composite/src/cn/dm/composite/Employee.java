@@ -16,6 +16,7 @@ public class Employee {
         this.salary = salary;
         this.subordinates = subordinates;
     }
+
     public Employee(String name, String dept, int salary) {
         super();
         this.name = name;
@@ -23,19 +24,20 @@ public class Employee {
         this.salary = salary;
         subordinates = new ArrayList<Employee>();
     }
-    public void add(Employee e){
+
+    public void add(Employee e) {
         subordinates.add(e);
     }
 
-    public void remove(Employee e){
+    public void remove(Employee e) {
         subordinates.remove(e);
     }
 
-    public List<Employee> getSubordinates(){
+    public List<Employee> getSubordinates() {
         return subordinates;
     }
 
-    public String toString(){
+    public String toString() {
         return "Employee :[ Name : " + name
                 + ", dept : " + dept + ", salary :"
                 + salary + " ]";
